@@ -1,0 +1,67 @@
+main {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 4rem;
+    background-color: #fcffff;
+    text-align: center;
+    display: block;
+    justify-items: center;
+    margin: 50px auto;
+    position: absolute;
+  }
+  
+  .label {
+    position: absolute;
+    /* Helps to keep label top on everything */
+    /* transform: translate(-9.8rem, -3.8rem); Position it on input */
+    font-size: 1rem;
+    padding: 0 5px;
+    font-weight: 600;
+  }
+  
+  /* Input boxes */
+  .input {
+    
+    border-radius: 0.4rem;
+    margin-top: 2rem;
+    background-color: #fcffff; /* Match the background */
+    border: #513da1 0.1rem solid;
+    width: 20rem;
+    height: 2rem;
+  }
+  .btn {
+    width: 6rem;
+    height: 2rem;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .search {
+    
+    margin-top: 2rem;
+    width: 20rem;
+    height: 2rem;
+    border-radius: 0.4rem;
+  }
+  
+  table{
+    margin: 4rem auto;
+    position: relative;
+    text-align: center;
+  
+  }
+  table, th, td{
+    border-collapse: collapse;
+    border: 1px solid #513da1 ;
+    
+  }
+  
+  th, td{
+    padding: 5px;
+  }
+  
