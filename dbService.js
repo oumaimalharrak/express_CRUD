@@ -81,9 +81,31 @@ export default class DbService {
                     resolve(result.affectedRows);
                 })
             })
+           
             return response === 1 ? true : false;
         } catch (error) {
             console.log(error)
+            return false;
+        }
+    }
+
+    //data update function 
+    async updateNameById(id, name) {
+       
+        try {
+            id = parseInt(id, 10); 
+            const response = await new Promise((resolve, reject) => {
+                const query = "UPDATE names SET name = ? WHERE id = ?;";
+    
+                connection.query(query, [name, id] , (err, result) => {
+                    if (err) reject(new Error(err.message));
+                    resolve(result.affectedRows);
+                })
+            });
+            console.log(response)
+            // return response === 1 ? true : false
+        } catch (error) {
+            console.log(error.message);
             return false;
         }
     }
